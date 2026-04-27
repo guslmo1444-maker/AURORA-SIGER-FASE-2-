@@ -50,3 +50,14 @@ fila_pouso = [
     {"nome": "Energia", "combustivel": 15, "massa": 2000},
     {"nome": "Habitação", "combustivel": 70, "massa": 1500}
 ]
+
+
+2. Regras de decisão com portas lógicas
+
+O sistema avalia:
+
+Combustível disponível
+Condições atmosféricas
+Disponibilidade da área de pouso
+Integridade dos sensores
+Regra principal
