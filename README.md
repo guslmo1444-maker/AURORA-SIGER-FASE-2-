@@ -52,7 +52,7 @@ fila_pouso = [
 ]
 
 
-2. Regras de decisão com portas lógicas
+##2. Regras de decisão com portas lógicas
 
 O sistema avalia:
 
