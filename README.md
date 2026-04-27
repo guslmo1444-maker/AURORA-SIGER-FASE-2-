@@ -1,4 +1,4 @@
-# Projeto Aurora Siger - Fase 2 🚀
+# Projeto Aurora Siger - Fase 2 
 
 ## Descrição do Projeto
 
