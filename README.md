@@ -46,7 +46,7 @@ Entretanto, a ordem pode ser alterada conforme regras de prioridade.
 - Lista de módulos em alerta  
 
 ## Exemplo
-
+---
 ```python
 fila_pouso = [
     {"nome": "Energia", "combustivel": 15, "massa": 2000},
