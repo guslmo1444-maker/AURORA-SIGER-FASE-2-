@@ -1,16 +1,16 @@
-# Projeto Aurora Siger - Fase 2 
+# Projeto Aurora Siger - Fase 2 🚀
 
 ## Descrição do Projeto
 
 Este projeto desenvolve o **Módulo de Gerenciamento de Pouso e Estabilização de Base (MGPEB)** para a missão Aurora Siger em Marte.
 
-O objetivo é simular a chegada de diferentes módulos à órbita marciana e definir critérios técnicos para autorização de pouso, utilizando conceitos fundamentais de Ciência da Computação.
+O objetivo é simular a chegada de diferentes módulos à órbita marciana e definir critérios técnicos para autorização de pouso utilizando conceitos fundamentais de Ciência da Computação.
 
 ---
 
 # 1. Modelagem do cenário de pouso e fila de módulos
 
-Os módulos representam componentes essenciais para a construção da colônia marciana:
+Os módulos representam componentes essenciais para a construção inicial da colônia marciana:
 
 - Habitação  
 - Energia  
@@ -20,7 +20,7 @@ Os módulos representam componentes essenciais para a construção da colônia m
 
 Cada módulo possui funções específicas e diferentes níveis de criticidade operacional.
 
-### Atributos utilizados
+## Atributos utilizados
 
 Cada módulo foi representado pelos seguintes atributos:
 
@@ -29,31 +29,29 @@ Cada módulo foi representado pelos seguintes atributos:
 - Criticidade da carga  
 - Horário estimado de chegada  
 
-### Estrutura principal
+## Estrutura principal
 
 Foi utilizada uma estrutura de **fila (queue)** para organizar os módulos aguardando autorização de pouso.
 
-A fila segue o modelo:
+A fila segue o princípio:
 
 **FIFO (First In, First Out)**
 
 Entretanto, a ordem pode ser alterada conforme regras de prioridade.
 
-### Listas auxiliares
+## Listas auxiliares
 
 - Lista de módulos pousados  
 - Lista de módulos em espera  
 - Lista de módulos em alerta  
 
-### Exemplo
+## Exemplo
 
 ```python
 fila_pouso = [
     {"nome": "Energia", "combustivel": 15, "massa": 2000},
     {"nome": "Habitação", "combustivel": 70, "massa": 1500}
 ]
-
-
 2. Regras de decisão com portas lógicas
 
 O sistema avalia:
@@ -64,15 +62,15 @@ Disponibilidade da área de pouso
 Integridade dos sensores
 Regra principal
 AUTORIZAR_POUSO = (
-    combustivel_suficiente 
-    AND sensores_ok 
-    AND area_disponivel 
-    AND clima_favoravel
+    combustivel_suficiente
+    and sensores_ok
+    and area_disponivel
+    and clima_favoravel
 )
 Regra de alerta
 ALERTA = (
-    combustivel_baixo 
-    OR sensores_com_falha
+    combustivel_baixo
+    or sensores_com_falha
 )
 Operadores utilizados
 AND
@@ -81,7 +79,7 @@ NOT
 
 Essas regras simulam o funcionamento de portas lógicas aplicadas ao sistema de pouso.
 
-3. Implementação em Python
+3. Implementação do protótipo em Python
 
 O sistema foi desenvolvido em Python para simular:
 
@@ -121,7 +119,7 @@ h₀ = altura inicial
 v = velocidade inicial
 g = gravidade de Marte
 t = tempo
-Aplicação prática
+Aplicações práticas
 
 A função auxilia em decisões como:
 
@@ -141,7 +139,7 @@ Baixo processamento
 Consumo energético reduzido
 Exposição à radiação
 
-Por isso o sistema utiliza algoritmos simples e eficientes.
+Por isso, o sistema utiliza algoritmos simples e eficientes.
 
 6. Princípios ESG
 
